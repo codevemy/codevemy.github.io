@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Nunito, sans-serif;
+      }
+
+      .main-heading {
+        font-size: 3rem;
+        margin: 1rem 0 0 0;
+        text-align: center;
+      }
+
+      main, #add {
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-bottom: 3rem;
+      }
+
+      #add {
+        margin-bottom: 5rem;
+        text-align: center;
+      }
+
+
+      /* TABLE */
+
+      table {
+        margin: 2rem 0 3rem 0;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 1.1rem;
+      }
+
+      table tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      table th, table td {
+        text-align: left;
+        padding: 1rem;
+      }
+
+      table thead {
+        background-color: #f1f1f1;
+      }
+
+      /* INPUT */
+
+      .search-wrapper {
+        margin-top: 1rem;
+        text-align: center;
+      }
+
+      #search {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 80%;
+        font-size: 1rem;
+        padding: 0.8rem;
+        outline: none;
+        font-family: Nunito, sans-serif;
+        transition: all 0.2s ease;
+      }
+
+      #search:focus {
+        border: 1px solid rgb(67, 142, 255);
+      }
+
+      /* BUTTON */
+
+      button {
+        margin-top: 1rem;
+        padding: 0.9rem 2.5rem;
+        font-size: 1rem;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: rgb(255, 0, 76);
+        color: white;
+        box-shadow: 0 5px 0 0 rgb(255, 77, 130);
+        font-size: 1.2rem;
+        font-family: Nunito, sans-serif;
+        transition: all 0.1s ease;
+      }
+
+      button:hover {
+        background-color: rgb(212, 22, 79);
+      }
+
+      button:active {
+        padding: 1rem 2.5rem;
+        margin-top: 1.2rem;
+        box-shadow: none;
+      }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="main-heading m-0 text-center">Keep record of your cars</h1>
+    <main>
+      <div class="search-wrapper">
+        <input type="text" placeholder="Search cars..." id="search">
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Car Name</th>
+            <th>Car Class</th>
+            <th>Car Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>McLaren F1</td>
+            <td>S</td>
+            <td>681XP</td>
+          </tr>
+          <tr>
+            <td>Porsche Carrera</td>
+            <td>S</td>
+            <td>662XP</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Sesto Elemento</td>
+            <td>S</td>
+            <td>637XP</td>
+          </tr>
+          <tr>
+            <td>Jaguar XJ220</td>
+            <td>S</td>
+            <td>609Xp</td>
+          </tr>
+          <tr>
+            <td>Ford Shelby GT500 Super Snake (#1S)</td>
+            <td>A</td>
+            <td>560XP</td>
+          </tr>
+          <tr>
+            <td>Ford Shelby GT500 Super Snake (#2J)</td>
+            <td>A</td>
+            <td>561XP</td>
+          </tr>
+          <tr>
+            <td>Cadillac Elmiraj</td>
+            <td>A</td>
+            <td>532XP</td>
+          </tr>
+          <tr>
+            <td>Porsche Panamera</td>
+            <td>B</td>
+            <td>493XP</td>
+          </tr>
+          <tr>
+            <td>Audi RS 6 Avant</td>
+            <td>B</td>
+            <td>477XP</td>
+          </tr>
+          <tr>
+            <td>Corvette C7.R</td>
+            <td>B</td>
+            <td>457XP</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Veneno #1</td>
+            <td>B</td>
+            <td>451XP</td>
+          </tr>
+          <tr>
+            <td>Mercedes-Benz AMG GT</td>
+            <td>B</td>
+            <td>423XP</td>
+          </tr>
+          <tr>
+            <td>Acura Integra GSR</td>
+            <td>B</td>
+            <td>399XP</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Aventador J</td>
+            <td>C</td>
+            <td>361XP</td>
+          </tr>
+          <tr>
+            <td>Ferrari 599 GTB</td>
+            <td>C</td>
+            <td>336XP</td>
+          </tr>
+          <tr>
+            <td>Checvrolet Camaro SS</td>
+            <td>C</td>
+            <td>314XP</td>
+          </tr>
+          <tr>
+            <td>Subaru Impreza</td>
+            <td>C</td>
+            <td>293XP</td>
+          </tr>
+          <tr>
+            <td>2015 Ford Mustang</td>
+            <td>C</td>
+            <td>279XP</td>
+          </tr>
+          <tr>
+            <td>Porsche Cayman S</td>
+            <td>C</td>
+            <td>261XP</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Centenario</td>
+            <td>C</td>
+            <td>243XP</td>
+          </tr>
+          <tr>
+            <td>Porsche Carrera GT</td>
+            <td>C</td>
+            <td>219XP</td>
+          </tr>
+          <tr>
+            <td>Ferrari FF</td>
+            <td>C</td>
+            <td>201XP</td>
+          </tr>
+          <tr>
+            <td>Pagani Huayra Roadster (red)</td>
+            <td>C</td>
+            <td>182XP</td>
+          </tr>
+          <tr>
+            <td>2008 Tesla Roadster</td>
+            <td>C</td>
+            <td>155XP</td>
+          </tr>
+          <tr>
+            <td>BMW M3</td>
+            <td>C</td>
+            <td>148XP</td>
+          </tr>
+          <tr>
+            <td>2012 Ford Mustang Boss 302</td>
+            <td>D</td>
+            <td>131XP</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Huracan (red)</td>
+            <td>D</td>
+            <td>135XP</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Veneno (green)</td>
+            <td>D</td>
+            <td>110XP</td>
+          </tr>
+          <tr>
+            <td>Chevrolet Camaro</td>
+            <td>D</td>
+            <td>99XP</td>
+          </tr>
+          <tr>
+            <td>Aston Martin</td>
+            <td>D</td>
+            <td>101XP</td>
+          </tr>
+          <tr>
+            <td>Nissan Titan</td>
+            <td>D</td>
+            <td>84XP</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Huracan (grey)</td>
+            <td>D</td>
+            <td>97XP</td>
+          </tr>
+          <tr>
+            <td>Ferrari LaFerrari</td>
+            <td>D</td>
+            <td>120XP</td>
+          </tr>
+          <tr>
+            <td>Dodge Challenger</td>
+            <td>D</td>
+            <td>74XP</td>
+          </tr>
+          <tr>
+            <td>Dodge Charger SRT</td>
+            <td>D</td>
+            <td>56XP</td>
+          </tr>
+          <tr>
+            <td>Pagani Huayra (grey)</td>
+            <td>D</td>
+            <td>67XP</td>
+          </tr>
+          <tr>
+            <td>2008 Mitsubishi Lancer Evolution</td>
+            <td>D</td>
+            <td>49XP</td>
+          </tr>
+          <tr>
+            <td>McLaren 720S</td>
+            <td>D</td>
+            <td>33XP</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script>
+      const input = document.getElementById('search');
+      const submit = document.getElementById('submit');
+      const first = document.getElementById('first');
+      const second = document.getElementById('second');
+
+      input.addEventListener('keyup', () => {
+        const filter = input.value.toUpperCase();
+        const table = document.getElementsByTagName("table")[0];
+        let tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          let td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            const txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
